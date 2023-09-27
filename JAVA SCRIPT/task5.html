@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>JS_Task-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin-top: 100px; margin-left: 300px;">
+        <form action="#">
+            Name: <input type="text" id="inName" onclick="removeRedName()"> <span id="errname"></span> <br /><br />
+            Email: <input type="email" id="inEmail" onclick="removeRedEmail()"> <span id="erremail"></span> <br /><br />
+            Website: <input type="text" id="inWebsite" onclick="removeRedWebsite()"> <span id="errwebsite"></span> <br /><br />
+            Message: <textarea name="mes" id="inMsg" cols="30" rows="3" onclick="removeRedMsg()"></textarea> <span id="errmsg"></span>
+            <br /><br />
+            <input type="submit" value="Submit" onclick="return validate()">
+        </form>
+    </div>
+
+    <script src="task5.js"></script>
+</body>
+
+</html>
